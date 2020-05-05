@@ -1,0 +1,7 @@
+<h1>add hello text here!</h1>
+
+<form action="{% url 'hello:doadd' %}" method="post">
+{% csrf_token %}
+input hello-text here: <input type="text" name="hello_text" />
+<input type="submit" value="add" />
+</form>

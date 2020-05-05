@@ -1,0 +1,11 @@
+{% if hello_text_list %}
+    <ul>
+    {% for text in hello_text_list %}
+        <li>{{ text.hello_text }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No hello text available.</p>
+{% endif %}
+
+<a href="{% url 'hello:add'  %}">add a hello text</a>
