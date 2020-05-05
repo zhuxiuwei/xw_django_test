@@ -48,5 +48,5 @@ def vote(request, question_id):
         # Always return an HttpResponseRedirect after successfully dealing
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.
-        # 注意，polls: 匹配的是urls.py里的app_name = 'polls'。是namespace。
+        # 注意 polls: 匹配的是urls.py里的app_name = 'polls'。是namespace。
         return HttpResponseRedirect(reverse('polls2:results2', args=(question.id,)))
